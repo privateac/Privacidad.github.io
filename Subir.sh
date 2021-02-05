@@ -1,5 +1,7 @@
 #! /bin/bash
 
+##Ignora esto jajaja es para actualizar el repositorio :)
+
 git add --all
 echo ""
 echo "git add -all ,complete"
