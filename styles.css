@@ -126,7 +126,7 @@ hr {
 
 .news-cards img {
     width: 100%;
-    height: 25%;
+    height: auto;
 }
 
 .news-cards h3 {
