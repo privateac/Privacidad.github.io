@@ -1,0 +1,147 @@
+/*Esto afecta todo el documento, se quita los margenes, se acomoda como caja y se quitan las separaciones*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Esto solo afecta al cuerpo, se pone un fondo negro con letras blancas, posteriormente se agrega un fondo extraido  de https://www.heropatterns.com/ y por ultimo se agrega una fuente de Google*/
+body{
+    background: black;
+    color: whitesmoke;
+    background-color: #040404;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23491d90' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Afecta a los enlaces "a" les quita el subdrayado y los pone en blanco*/
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Le quita el estilo de lista a las listas*/
+ul{
+    list-style: none;
+}
+
+/*Afecta al contenedor, lo marca como el 90% de ancho de la página y le pone los margenes automaticos*/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*Navegación, se agrega un tamaño de letra,determina el tipo de caja, en este caso flexible, el justificado, alinia al centro los elementos y los limita a una altura de 60px con separaciones de 20px*/
+.nav-main {
+    font-size:  17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+/*Pone el ancho de la foto en 50px*/
+.nav-photo {
+    width: 50px;
+}
+
+/*Directorio de navegación, determina el timpo de caja flexible*/
+.nav-main ul{
+    display: flex;
+}
+
+/*Le da separación de 10px entre los elementos de la lista*/
+.nav-main ul li {
+    padding: 10px;
+}
+
+/*Agrega el espaciado entre el subdrayado*/
+.nav-main ul li a {
+    padding: 6px;
+}
+
+/*Hace que se vea subdrayado cuando el curson pasa sobre el enlace*/
+.nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/*Hace que los enlaces no estén pegados a la imagen*/
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*Hace que la barra tenga un pargen de 10px hacia arriba y hacia abajo y de 0 hacia los lados*/
+hr {
+    margin: 10px 0;
+}
+
+/*Showcase, es la imagen principal, se declara que tomará el 100% del contenedor(que mide 90%) con una altura del texto de 550px, se pone de background una imagen sacada de pexels.com, a esta imafen se le indica que no repita, se ponga en el centro y centrada, se indica la separación de 50px del borde inferior y de 10px de los bordes de lado, se indica que la caja es un cuadrado con columna, se centran  los lados y se justifica el texto*/
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url(img/showcase.jpg) no-repeat center center/cover;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+/*Es la etiqueta para marcar los botones, se indica que al pasar el mouse debe de cambiar el cursor, se indica que es un bloque con borde 0 y con letra en negritas, con separación de 10px de borde arriba y abajo y de 20px de los lador, la letra se pone blanca y el fondo gris, se indica el tamaño 15px de letra, el borde de 1px solido blanco con margenes de 10px hacia todos los lados*/
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #252525;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 10px;
+}
+
+/*Se indica que el botón se opaque al acercar el cursor*/
+.btn:hover{
+    opacity: 0.65;
+}
+
+/*Se agregan margenes de 10px a el titulo "h2" y el parrafo "p" de 10px para abajo*/
+.showcase h2
+.showcase p {
+    margin-bottom: 10px;
+}
+
+/*Tarjetas de entrada*/
+
+.news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 25%;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: underline;
+}

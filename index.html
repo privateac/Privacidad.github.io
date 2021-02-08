@@ -1,22 +1,81 @@
+<!DOCTYPE html>
+<!--Añadir el tipo de idioma-->
 <html lang="es">
-    <head>
-        <title>
-            La Privacidad
-        </title>
-        <meta name="¿Por qué la privacidad es importante?" content="Esta página habla sobre por qué es importante la privacidad y por qué deberia de importarte" />
-        <meta name="keywords" content="privacidad, mexico, latinoamerica, español, por, que">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <center>
-        <iframe style="border:none" src="titulo.html" width="100%" height="10%">                    </iframe>
-        <iframe name="principal" style="border:none" src="Intro.html" width="80%" height="80%">     </iframe>
-        <iframe style="border:none" src="menu.html" width="19%" height="80%">             </frame>
-        </center>
-    
-    <footer>
-            Derechos reservados xd
-    </footer>
+<head>
+    <!--Indicar los caracteres-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de la página-->
+    <title>LaPrivacidad</title>
+    <!--Agregar la tipografía: Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Font oswald de Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    </body>
+    <!--Agregar class para poder clasificar las zonas para posteriormente añadir estilos :)-->
+    <div class="container">
+
+        <!--Barra de navegación principal-->
+        <nav class="nav-main">
+            <!--Foto de perfil-->
+            <img src="img/photo_user.png" class="nav-photo">
+            <!--Enlaces de navegación-->
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Historia</a>
+                </li>
+                <li>
+                    <a href="#">¿Qué hacer?</a>
+                </li>
+                <li>
+                    <a href="#">Otras fuentes</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Barra de separación-->
+        <hr>
+
+        <!--Imagen principal de la página-->
+        <header class="showcase">
+            <h2>¿Realmente importa la Privacidad?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque sit ad, cupiditate labore ex, asperiores illum, fuga beatae iure sunt qui nobis sequi rem? Esse sint alias sequi ad quae!</p>
+            <a class="btn" href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+        </header>
+
+        <!--Otras notas-->
+        <div class="news-cards">
+            <div>
+                <img src="img/image1.jpg" alt="news1">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi consequuntur ipsa, dolor ullam aperiam dolorum corrupti, error eligendi ipsam natus voluptatem qui nisi est.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/image2.jpg" alt="news2">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi consequuntur ipsa, dolor ullam aperiam dolorum corrupti, error eligendi ipsam natus voluptatem qui nisi est.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/image3.jpg" alt="news3">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi consequuntur ipsa, dolor ullam aperiam dolorum corrupti, error eligendi ipsam natus voluptatem qui nisi est.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
