@@ -198,6 +198,7 @@ hr {
     padding: 35px 0;
 }
 
+
 /*Anotaciones de abajo, dos columnas para que no esté centrado*/
 .footer-container{
     display: grid;
@@ -215,6 +216,11 @@ hr {
 /*Altura de las listas, el distanciamiento*/
 .footer-container ul li{
     line-height: 2.5;
+}
+
+/*Agregar barra al pasar el mouse sobre los hipervinculos*/
+.footer-container ul li a:hover {
+    text-decoration: underline;
 }
 
 /*Poner la licencia*/
@@ -242,7 +248,7 @@ hr {
         left: 0;
         background: #2f3640;
         width: 50%;
-        height: 100%;
+        height: 150%;
         border-right: #ccc 1px solid;
         opacity: 0.9;
         padding: 30px;
@@ -283,4 +289,54 @@ hr {
         width: 100%;
         padding: 60px 20px;
     }
+}
+
+
+
+
+/*Página sobre la historia*/
+
+/*Título principal de la página historia*/
+.titulo-hist{
+    width: 100%;
+    height: 500px;
+    background: url(img/historia.jpeg) no-repeat center center/cover;
+    padding: 50px 10px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.historia p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: justify;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.historia h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 10px 30px;
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+.historia p a{
+    color: rgb(163, 33, 33);
+}
+
+.historia ul{
+    list-style: outside;
+    margin: 60px;
+}
+
+.cite {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
 }
