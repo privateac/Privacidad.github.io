@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background: black;
+    color: whitesmoke;
+    background-color: #4b658462;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    padding: 15px;
+    background-color: #2d98da5e;
+    border: 1px #9999;
+}
